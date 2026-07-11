@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding: 24px; 
+  
+  background-color: #121214;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}

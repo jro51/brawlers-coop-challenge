@@ -1,0 +1,176 @@
+
+.lienzo-principal {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  
+  width: 100%;
+  max-width: 1000px; 
+  height: 80vh;
+  
+  padding: 50px 40px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  
+  /* Cambiado a space-between para separar limpiamente las secciones verticalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.header-ruleta {
+  margin-bottom: 5px;
+}
+
+/* Encabezados Sencillos */
+.tag-reto {
+  font-size: 1.4rem;
+  font-weight: 1000;
+  color: #2563eb; /* Azul Eléctrico */
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  margin-bottom: 8px;
+}
+
+.titulo-simple {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 5px 0;
+  line-height: 2.5;
+}
+
+/* El Botón de Acción Principal al Estilo de la Referencia */
+.btn-accion {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #0052e0; /* Azul exacto de la imagen */
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-bottom: 15px;
+}
+
+.btn-accion:hover {
+  background-color: #0041b3;
+}
+
+.btn-accion:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Sección de Resultados Simplificada */
+.resultado-box {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 0.1px;
+  width: 100%;
+  max-width: 850px; /* Más ancho para que respire hacia los lados */
+  flex-grow: 1;    /* Hace que esta sección ocupe el espacio central disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra los elementos internos verticalmente con aire */
+  gap: 40px;               /* Separación interna uniforme entre modo, brawlers y condición */
+}
+
+.modo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #f1f5f9;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #334155;
+  margin: 0 auto; /* Centrado horizontal puro sin empujar hacia abajo */
+  width: fit-content;
+}
+
+/* Grid de Personajes */
+.grid-personajes {
+  display: flex;
+  justify-content: center;
+  gap: 35px; /* Más espacio de separación entre tu brawler y el de ella */
+  width: 100%;
+}
+
+.tarjeta-personaje {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  max-width: 320px; /* Evita que se estiren de más horizontalmente */
+}
+.tarjeta-personaje span {
+  font-size: 0.7rem;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.nombre-personaje {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 8px 0 0 0;
+}
+
+/* Alerta de Desafío */
+.alerta-desafio {
+  background-color: #fdf2f2;
+  border-left: 4px solid #ef4444;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+}
+
+.alerta-desafio strong {
+  font-size: 1rem;
+  color: #b91c1c;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.alerta-desafio p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #451a03;
+  font-weight: 600;
+}
+
+/* Mensaje Base */
+.texto-espera {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 15px 0;
+}
+
+/* Animación sutil de cambio */
+.girando-efecto {
+  opacity: 0.5;
+  transform: scale(0.99);
+}
