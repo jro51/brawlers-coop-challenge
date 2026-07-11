@@ -3,7 +3,7 @@
   <!-- Agrupamos la parte superior -->
   <div class="header-ruleta">
     <span class="tag-reto">Retos Random Co-Op</span>
-    <h1 class="titulo-simple">Hora de divertirse.. o trollear?</h1>
+    <h1 class="titulo-simple">Hora de divertirse.. o bajar copas?</h1>
 
     <button class="btn-accion" [disabled]="girando" (click)="onGirarRuleta()">
       {{ girando ? 'Girando...' : 'Spin!' }}
@@ -22,21 +22,25 @@
       <!-- Grid de Brawlers -->
       <div class="grid-personajes">
         <div class="tarjeta-personaje">
-          <span>Brawler Jugador 1</span>
           <img class="avatar" [src]="retoActual.imageUrlTu" [alt]="retoActual.brawlerTu">
-          <p class="nombre-personaje">{{ retoActual.brawlerTu }}</p>
+          <div>
+            <span>Brawler Jugador 1</span>
+            <p class="nombre-personaje">{{ retoActual.brawlerTu }}</p>
+          </div>
         </div>
 
         <div class="tarjeta-personaje">
-          <span>Brawler Jugador 2</span>
           <img class="avatar" [src]="retoActual.imageUrlElla" [alt]="retoActual.brawlerElla">
-          <p class="nombre-personaje">{{ retoActual.brawlerElla }}</p>
+          <div>
+            <span>Brawler Jugador 2</span>
+            <p class="nombre-personaje">{{ retoActual.brawlerElla }}</p>
+          </div>
         </div>
       </div>
 
       <!-- Condición Especial -->
       <div class="alerta-desafio">
-        <strong>Condición Especial</strong>
+        <strong>Reestricción</strong>
         <p>{{ retoActual.condicion }}</p>
       </div>
 
